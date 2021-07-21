@@ -5,12 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Synchronize App Landing Page</title>
   </head>
 
   <body>
     <div id="root">
-      <h1>Synchronize App</h1>
+      <section class="hero">
+        <nav class="navbar">
+          <a href="#">
+            <img
+              class="navbar__logo"
+              src="./images/svg/logo.svg"
+              alt="Synchronize Logo"
+            />
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a class="navbar__list-link" href="#">App</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-link" href="#">Why Synchronize?</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-link" href="#">About</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-link" href="#">Plans</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-link" href="#">Support</a>
+            </li>
+          </ul>
+          <button type="button" class="navbar__open-btn btn">
+            Open Synchronize
+          </button>
+        </nav>
+
+        <div class="hero__content">
+          <div class="hero__content-text">
+            <h1>Collaboration</h1>
+            <h1>Redefined</h1>
+          </div>
+
+          <div class="hero__content-images">
+            <img
+              src="./images/svg/left-man.svg"
+              alt="left-man"
+              class="left-man"
+            />
+            <img src="./images/svg/right-woman.svg" alt="right-woman" />
+          </div>
+        </div>
+
+        <div class="hero__desc">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Placeat perferendis deserunt officia illo ipsa minima.
+          </p>
+        </div>
+      </section>
     </div>
   </body>
 </html>
