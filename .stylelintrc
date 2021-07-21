@@ -10,7 +10,6 @@
     "stylelint-order"
   ],
   "rules": {
-    "number-leading-zero": "never",
     "a11y/font-size-is-readable": true,
     "a11y/no-text-align-justify": true,
     "a11y/no-obsolete-element": true,
