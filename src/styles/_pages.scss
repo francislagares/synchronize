@@ -5,9 +5,23 @@
   &__content {
     top: 15%;
     text-align: center;
-    font-size: 10rem;
+    font-size: 12vw;
     font-weight: 600;
     position: relative;
+
+    &-text h1:first-of-type {
+      background-image: linear-gradient(to right bottom, #f53c95, #04f);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &-text h1:last-of-type {
+      background-image: linear-gradient(to right bottom, #004bfa, #02f18e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
     &-images {
       top: 15%;
