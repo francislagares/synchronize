@@ -63,3 +63,31 @@
     }
   }
 }
+
+.app-section {
+  width: 100vw;
+  height: 100rem;
+  position: relative;
+  background-image: linear-gradient(to right top, #10f 0%, #6f00ff 100%);
+
+  &__backdrop {
+    width: 100vw;
+    height: 100rem;
+    background-image: linear-gradient(to left bottom, #ff004d 0%, #ff3e00 100%);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  }
+}
+
+.app-window {
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 85%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-backdrop-filter: blur(4rem);
+  backdrop-filter: blur(4rem);
+  box-shadow: 0 0 40px 10px #000;
+  border-radius: 10px;
+}
