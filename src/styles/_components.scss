@@ -18,9 +18,25 @@
     align-items: center;
     flex: 0 0 60%;
 
+    /* stylelint-disable */
     &-link {
       font-size: 1.5rem;
       font-weight: 400;
+      background-image: linear-gradient(
+        to right,
+        #06f 0%,
+        #00ffe0 50%,
+        #fcf9ff 50%
+      );
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 0.3s ease;
+
+      @include clip-text;
+    }
+
+    &-link:hover {
+      background-position: 0% 100%;
     }
   }
 }
@@ -34,4 +50,13 @@
   border: 1px groove $blue;
   border-radius: 2rem;
   background-color: $black;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.3s ease;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, #06f 0%, #00ffe0 50%, $black 50%);
+  background-position: 0 100%;
+  border: none;
 }

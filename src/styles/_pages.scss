@@ -11,16 +11,14 @@
 
     &-text h1:first-of-type {
       background-image: linear-gradient(to right bottom, #f53c95, #04f);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+
+      @include clip-text;
     }
 
     &-text h1:last-of-type {
       background-image: linear-gradient(to right bottom, #004bfa, #02f18e);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+
+      @include clip-text;
     }
 
     &-images {
