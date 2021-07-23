@@ -90,4 +90,137 @@
   backdrop-filter: blur(4rem);
   box-shadow: 0 0 40px 10px #000;
   border-radius: 10px;
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+    margin-top: 20%;
+
+    &--red {
+      background-color: #f00;
+    }
+
+    &--yellow {
+      background-color: #fb0;
+    }
+
+    &--green {
+      background-color: #03c203;
+    }
+
+    .dot {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+.app-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.app-server-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 0 0 5%;
+
+  .app-logo {
+    width: auto;
+    height: 4rem;
+    margin-bottom: 20%;
+  }
+}
+
+.app-servers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    .servers {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: none;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 5px 4px #fcf9ff;
+      }
+    }
+  }
+
+  .servers {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 5px 4px #fcf9ff;
+    }
+  }
+
+  .server-1 {
+    background-color: #00ffd1;
+  }
+
+  .server-2 {
+    background-color: #2a9d8f;
+  }
+
+  .server-3 {
+    background-color: #e9c46a;
+  }
+
+  .server-4 {
+    background-color: #f4a261;
+  }
+
+  .server-5 {
+    background-color: #e76f51;
+  }
+
+  .server-6 {
+    background-color: #e63946;
+
+    img {
+      height: 80%;
+    }
+  }
+
+  .server-7 {
+    background-color: #bfffa9;
+
+    img {
+      height: 60%;
+    }
+  }
+
+  .server-8 {
+    background-color: #a8dadc;
+
+    img {
+      height: 90%;
+    }
+  }
 }
