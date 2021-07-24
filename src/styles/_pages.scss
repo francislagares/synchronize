@@ -81,7 +81,7 @@
 .app-window {
   top: 50%;
   left: 50%;
-  width: 80vw;
+  width: 85vw;
   height: 85%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -230,7 +230,7 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  flex: 0 0 20%;
+  flex: 0 0 26%;
   background-color: #161b1f;
 
   #search-box {
@@ -279,5 +279,110 @@
     &:focus {
       background-color: #0f58e0;
     }
+  }
+
+  .team-info {
+    margin-top: 10%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0e101a;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      &__dp img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 0.5rem;
+        background-color: #00ffd1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: none;
+      }
+    }
+
+    &__dp img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 0.5rem;
+      background-color: #00ffd1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.1s ease-out;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 5px 4px #00b694;
+      }
+    }
+  }
+
+  .app-contacts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      &__list {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: none;
+
+        &:hover,
+        &:focus {
+          background-color: #1d222f;
+        }
+      }
+    }
+
+    &__list {
+      width: 80%;
+      height: auto;
+      padding: 0 10%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      transition: all 0.5s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: #1d222f;
+      }
+
+      .list-image {
+        width: 50%;
+        height: 75%;
+        border-radius: 50%;
+        margin-right: 10%;
+      }
+
+      .contacts-info {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .app-contacts::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  .app-contacts::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 100px;
   }
 }
