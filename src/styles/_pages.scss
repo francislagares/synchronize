@@ -386,3 +386,57 @@
     border-radius: 100px;
   }
 }
+
+.app-chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  background-color: seagreen;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: crimson;
+  }
+
+  &__users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: -0.5rem;
+  }
+
+  &__user-image:nth-child(1) {
+    z-index: 5;
+  }
+
+  &__user-image:nth-child(2) {
+    z-index: 4;
+  }
+
+  &__user-image:nth-child(3) {
+    z-index: 3;
+  }
+
+  &__user-image:nth-child(4) {
+    z-index: 2;
+  }
+
+  &__add-user {
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 50%;
+    margin-right: -0.5rem;
+    background-color: #00aee5;
+  }
+}
