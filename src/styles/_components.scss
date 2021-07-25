@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-backdrop-filter: blur(4rem);
+  backdrop-filter: blur(4rem);
 
   &__logo {
     width: auto;
