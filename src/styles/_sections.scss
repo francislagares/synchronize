@@ -726,3 +726,54 @@
     border-right: 1px solid #fcf9ff;
   }
 }
+
+/**************************** Why-Synchronize Section ******************************/
+.why-synchronize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 5rem;
+
+  h4 {
+    font-weight: 600;
+    margin-top: 2%;
+  }
+
+  &__left {
+    flex: 0 0 50%;
+
+    .heading--red {
+      color: #ff2441;
+    }
+
+    .l-angle {
+      margin-left: 4rem;
+      margin-top: 1rem;
+    }
+
+    .key-points {
+      margin-left: 12rem;
+      margin-top: -1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 75%;
+
+      &__paragraph {
+        margin: 5% 0;
+        color: #a7a7a7;
+        font-size: 1.8rem;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0 0 50%;
+
+    .bot {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
