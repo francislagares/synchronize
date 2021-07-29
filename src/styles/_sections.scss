@@ -812,3 +812,92 @@
     font-weight: 600;
   }
 }
+
+/**************************** Why-Synchronize Section ******************************/
+.plan-section {
+  height: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    line-height: 1.5;
+
+    span {
+      color: #00ffe0;
+    }
+  }
+
+  /* stylelint-disable */
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    position: relative;
+
+    &:hover .card {
+      filter: blur(1rem);
+      transform: scale(0.9);
+    }
+
+    .card {
+      height: 45rem;
+      width: 350px;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2rem 2rem 0.5rem #000;
+      transition: all 0.2s;
+
+      &:hover {
+        z-index: 20;
+        filter: blur(0);
+        transform: scale(1);
+      }
+
+      h3 {
+        font-weight: 600;
+      }
+
+      &__header {
+        line-height: 1.5;
+      }
+
+      &__plan {
+        text-align: center;
+        margin-top: 5%;
+        line-height: 2;
+
+        button {
+          background-color: #e7e7e7;
+          height: 4rem;
+          width: 15rem;
+          margin-top: 15%;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .card-1,
+    .card-3 {
+      background-color: #fcf9ff;
+      color: #0c1014;
+    }
+
+    .card-2 {
+      background-color: #2020ff;
+      color: #fcf9ff;
+      z-index: 10;
+      margin: 0 -70%;
+    }
+  }
+}
