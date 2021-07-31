@@ -29,7 +29,7 @@
       background-image: linear-gradient(
         to right,
         #06f 0%,
-        #00ffe0 50%,
+        $light-green 50%,
         #fcf9ff 50%
       );
       background-size: 200% 100%;
@@ -60,7 +60,12 @@
 }
 
 .btn:hover {
-  background-image: linear-gradient(to right, #06f 0%, #00ffe0 50%, $black 50%);
+  background-image: linear-gradient(
+    to right,
+    #06f 0%,
+    $light-green 50%,
+    $black 50%
+  );
   background-position: 0 100%;
   border: none;
 }
