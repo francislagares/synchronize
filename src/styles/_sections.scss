@@ -901,3 +901,72 @@
     }
   }
 }
+
+/**************************** Support Section ******************************/
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    margin-top: 5rem;
+  }
+
+  &__article {
+    margin-top: 2%;
+    background-color: $black;
+    width: 110rem;
+    height: 75rem;
+    box-shadow: 0 0 4rem 1rem #000;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    .container {
+      padding: 2rem;
+
+      input[type='text'],
+      input[type='submit'],
+      input[type='email'],
+      select {
+        width: 100%;
+        padding: 1.2rem;
+        margin: 0.8rem 0;
+        background-color: #f3e7d9;
+        border: none;
+      }
+
+      select {
+        width: 105%;
+      }
+
+      .check-box {
+        font-size: 1.6rem;
+      }
+
+      input[type='checkbox'] {
+        margin-top: 2rem;
+      }
+
+      input[type='submit'] {
+        background-color: #11dd22;
+        color: white;
+        border: none;
+        width: 105%;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      input[type='submit']:hover {
+        opacity: 0.8;
+      }
+    }
+
+    img {
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
