@@ -10,6 +10,7 @@ html {
   font-size: $font-size;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
