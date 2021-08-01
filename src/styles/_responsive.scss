@@ -24,3 +24,36 @@
     width: 100rem;
   }
 }
+
+@media only screen and (max-width: 1023px) {
+  .hero {
+    height: 70rem;
+  }
+
+  .app-section {
+    display: none;
+  }
+
+  .why-synchronize__left {
+    flex: 0 0 100%;
+
+    .l-angle {
+      display: none;
+    }
+
+    .key-points {
+      margin-left: 0%;
+      margin-top: 5%;
+      height: 70%;
+    }
+  }
+
+  .why-synchronize__right {
+    display: none;
+  }
+
+  .support__article {
+    width: 70rem;
+    height: 60rem;
+  }
+}
