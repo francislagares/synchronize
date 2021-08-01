@@ -69,3 +69,10 @@
   background-position: 0 100%;
   border: none;
 }
+
+#nav-toggle {
+  display: block;
+  position: absolute;
+  top: -10rem;
+  cursor: pointer;
+}

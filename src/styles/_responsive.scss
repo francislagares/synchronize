@@ -57,3 +57,93 @@
     height: 60rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 89vw;
+    height: 5rem;
+    padding: 0 5%;
+    background-color: #000;
+    backdrop-filter: none;
+    justify-content: space-between;
+
+    &__open-btn {
+      display: none;
+    }
+
+    &__logo {
+      height: 3rem;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      &__list {
+        top: 5rem;
+        bottom: 100%;
+        right: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        font-size: 2.4rem;
+        flex-direction: column;
+        z-index: 10;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        transition: none;
+      }
+    }
+
+    &__list {
+      top: 5rem;
+      bottom: 100%;
+      right: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      font-size: 2.4rem;
+      flex-direction: column;
+      z-index: 10;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input[type='checkbox']:checked ~ &__list {
+      bottom: 0;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      .icon-burger .bar {
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px;
+        border-radius: 10px;
+        transition: none;
+      }
+    }
+
+    .icon-burger .bar {
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      margin: 5px;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /***************** Burger Animation *****************/
+    :checked ~ .icon-burger .bar:nth-child(1) {
+      transform: translateY(7px) rotate(225deg);
+    }
+
+    :checked ~ .icon-burger .bar:nth-child(3) {
+      transform: translateY(-7px) rotate(-225deg);
+    }
+
+    :checked ~ .icon-burger .bar:nth-child(2) {
+      opacity: 0;
+    }
+  }
+}
