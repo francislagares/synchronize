@@ -1,0 +1,145 @@
+@media screen and (prefers-reduced-motion: reduce) {
+  .hero__content-text h1:first-of-type {
+    animation: none;
+    animation-duration: 3s;
+  }
+}
+
+.hero__content-text h1:first-of-type {
+  animation-name: swipe-from-right;
+  animation-duration: 3s;
+}
+
+@keyframes swipe-from-right {
+  0% {
+    margin-right: -200rem;
+  }
+
+  50% {
+    margin-right: 5rem;
+  }
+
+  100% {
+    margin-right: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .hero__content-text h1:last-of-type {
+    animation: none;
+    animation-duration: 3s;
+  }
+}
+
+.hero__content-text h1:last-of-type {
+  animation-name: swipe-from-left;
+  animation-duration: 3s;
+}
+
+@keyframes swipe-from-left {
+  0% {
+    margin-left: -200rem;
+  }
+
+  50% {
+    margin-left: 5rem;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .left-man--bounce {
+    animation: none;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+  }
+}
+
+.left-man--bounce {
+  animation-name: man-bounce;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+
+@keyframes man-bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .right-woman--bounce {
+    animation: none;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+  }
+}
+
+.right-woman--bounce {
+  animation-name: woman-bounce;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+@keyframes woman-bounce {
+  0% {
+    transform: translateY(-1rem);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .signal {
+    animation: none;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.signal {
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
